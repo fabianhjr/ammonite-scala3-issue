@@ -2,6 +2,7 @@ package ammonite
 
 object SampleAmmoniteMainRun {
   def main(): Unit = {
-    ammonite.Main().run("sampleValue" -> SampleEnum.One)
+    val sampleValue = SampleValue.One
+    ammonite.Main().run("sampleValue" -> sampleValue)
   }
 }
